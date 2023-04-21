@@ -1,0 +1,46 @@
+@font-face {
+  font-family: raleway-regular;
+  src: url(fonts/Raleway/static/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: raleway-extra;
+  src: url(fonts/Raleway/static/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: raleway-light;
+  src: url(fonts/Raleway/static/Raleway-Light.ttf);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  border-bottom-style: solid;
+  border-color: #006600;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+  font-family: raleway-regular;
+}
+
+
+
+p {
+  padding: 0.5em;
+}
+
+.body-rapid-recipes {
+  background-color: #dddddd;
+  font-family: raleway-light;
+}
+
+.content-rapid-recipes > h1 {
+  color: #006600 !important;
+  font-family: raleway-extra;
+}
+
+.content-rapid-recipes {
+  background-color: #ffffff;
+}

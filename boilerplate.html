@@ -1,27 +1,49 @@
 <!DOCTYPE html>
+
+<!--
+
+*js use cookie to store night mode
+* carousel - https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+-->
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Rapid Recipes</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- CSS sources -->
+  <link rel="stylesheet" href="style/global.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
-<body>
+<body class="body-rapid-recipes">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href='index.html'>Rapid Recipes</a>
       </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href='#'>Home</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
-        <li><a href="essentials.html">Essentials</a></li>
-        <li><a href="health.html">Health</a></li>
-        <li><a href="targets.html">Targets</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href='#'>Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="essentials.html">Essentials</a></li>
+          <li><a href="health.html">Health</a></li>
+          <li><a href="targets.html">Targets</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
+
+  <div class="container content-rapid-recipes">
+    <h1>Rapid Recipes</h1>
+    <p>para</p>
+  </div>
 </body>
 <!-- JQuery JS -->
 <script src="lib/jquery-3.6.4/jquery-3.6.4.min.js"></script>
