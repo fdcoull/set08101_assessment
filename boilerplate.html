@@ -2,8 +2,16 @@
 
 <!--
 
+Todo:
+* make logo
+* add logo menu
+* night mode
+
 *js use cookie to store night mode
 * carousel - https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+
+Changes
+* Removed cookware and ingredients pages and combined into essentials page
 
 -->
 
@@ -17,8 +25,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
-<body class="body-rapid-recipes">
-  <nav class="navbar navbar-default">
+<body id="body" class="body-rapid-recipes">
+  <nav id="menuBody" class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
@@ -32,19 +40,35 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href='#'>Home</a></li>
           <li><a href="recipes.html">Recipes</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="recipes.html">All Recipes</a></li>
+              <li><a href="breakfast.html">Breakfast</a></li>
+              <li><a href="lunch.html">Lunch</a></li>
+              <li><a href="dinner.html">Dinner</a></li>
+            </ul>
+          </li>
           <li><a href="essentials.html">Essentials</a></li>
           <li><a href="health.html">Health</a></li>
           <li><a href="targets.html">Targets</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a id="switchTheme" onclick="activateDarkMode()" href="#"><span class="glyphicon glyphicon-adjust"></span></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container content-rapid-recipes">
+  <div id="content" class="container content-rapid-recipes">
     <h1>Rapid Recipes</h1>
+    <hr>
     <p>para</p>
   </div>
 </body>
+<!-- JS sources -->
+<script src="js/global.js"></script>
 <!-- JQuery JS -->
 <script src="lib/jquery-3.6.4/jquery-3.6.4.min.js"></script>
 <!-- Bootstrap JS -->

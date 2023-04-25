@@ -31,16 +31,36 @@ p {
   padding: 0.5em;
 }
 
-.body-rapid-recipes {
-  background-color: #dddddd;
-  font-family: raleway-light;
+body {
+  font-family: raleway-light !important;
 }
 
-.content-rapid-recipes > h1 {
-  color: #006600 !important;
+hr {
+  color: #006600;
+  background-color: #006600;
+  height: 0.2em !important;
+  border-width: 0 !important;
+}
+
+.body-rapid-recipes {
+  background-color: #dddddd;
+  color: #000000;
+}
+
+.body-rapid-recipes-dark {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.content-rapid-recipes > h1,
+.content-rapid-recipes-dark > h1 {
   font-family: raleway-extra;
 }
 
 .content-rapid-recipes {
   background-color: #ffffff;
+}
+
+.content-rapid-recipes-dark {
+  background-color: #111111;
 }
