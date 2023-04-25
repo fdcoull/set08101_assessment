@@ -1,7 +1,12 @@
 Todo:
 * tiles for list page
 * template for recipe page
+* print friendly page
+* calculator for nutritional targets page
+* essentials page
+* health page
 * home page carousel- https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
 
 Changes
 * Removed cookware and ingredients pages and combined into essentials page
+* High contrast not implemented as in dark and light themes, contrast between text and background is high

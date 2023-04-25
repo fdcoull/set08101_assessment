@@ -1,3 +1,4 @@
+/* Get fonts */
 @font-face {
   font-family: raleway-regular;
   src: url(fonts/Raleway/static/Raleway-Medium.ttf);
@@ -13,40 +14,45 @@
   src: url(fonts/Raleway/static/Raleway-Light.ttf);
 }
 
+/* Override default bootstrap navbar and add green accent colour */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   border-bottom-style: solid;
-  border-color: #006600;
+  border-color: #28ac08;
 }
 
+/* Override default bootstrap navbar style */
 .navbar {
   margin-bottom: 0 !important;
   font-family: raleway-regular;
 }
 
+/* Override default bootstrap navbar brand for logo image */
 .navbar-brand {
   padding: 5px 5px !important;
 }
 
+/* Logo image style */
 .navbar-brand > img {
   height:100%;
   width:auto;
 }
 
-
-
+/* Paragraph style */
 p {
   padding: 0.5em;
 }
 
+/* Body style */
 body {
   font-family: raleway-light !important;
 }
 
+/* hr divider style */
 hr {
-  color: #006600;
-  background-color: #006600;
+  color: #28ac08;
+  background-color: #28ac08;
   height: 0.2em !important;
   border-width: 0 !important;
 }

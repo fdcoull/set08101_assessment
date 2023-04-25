@@ -1,3 +1,122 @@
-<html>
-Test
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Head meta settings -->
+<head>
+  <meta charset="utf-8">
+  <title>Rapid Recipes</title>
+  <link rel="icon" type="image/x-icon" href="images/company/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- CSS sources -->
+  <link rel="stylesheet" href="style/global.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<!-- Body content -->
+<body id="body" class="body-rapid-recipes">
+  <!-- Navigation bar -->
+  <nav id="menuBody" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Site logo -->
+        <a class="navbar-brand" href='index.html'>
+          <img src="images/company/rapid-recipes-logo-full-black.png" alt="Rapid Recipes" id="menuLogo">
+        </a>
+      </div>
+      <!-- Navigation bar options -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href='index.html'>Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="recipes.html">All Recipes</a></li>
+              <li><a href="breakfast.html">Breakfast</a></li>
+              <li><a href="lunch.html">Lunch</a></li>
+              <li><a href="dinner.html">Dinner</a></li>
+            </ul>
+          </li>
+          <li><a href="essentials.html">Essentials</a></li>
+          <li><a href="health.html">Health</a></li>
+          <li><a href="targets.html">Targets</a></li>
+        </ul>
+        <!-- Theme switch button -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a id="switchTheme" onclick="activateDarkMode()" href="#"><span class="glyphicon glyphicon-adjust"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page content -->
+  <div id="content" class="container content-rapid-recipes">
+    <!-- Page title -->
+    <h1>Rapid Recipes</h1>
+    <hr>
+    <p>Welcome to Rapid Recipes! A budget recipe website focused on low cost ingredients, high nutritional value, and minimal ingredients. The idea behind this site is 
+        to give meal recommendations for people requiring healthy and cheap home-made substitutes for ready meals so they can enjoy a great meal on a tight schedule.</p>
+    <h2>Some of our favourites</h2>
+    <!-- Carousel for top recipes -->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <a href="meal.html">
+                <img src="images/recipes/1.jpg" alt="Los Angeles" width="100%">
+                <div class="carousel-caption">
+                    <h1>Test</h1>
+                </div>
+            </a>
+          </div>
+      
+          <div class="item">
+            <a href="meal.html">
+                <img src="images/recipes/2.jpg" alt="Chicago" width="100%">
+                <div class="carousel-caption">
+                    <h1>Test</h1>
+                </div>
+            </a>
+          </div>
+      
+          <div class="item">
+            <a href="meal.html">
+            <img src="images/recipes/3.jpg" alt="New York" width="100%">
+            <div class="carousel-caption">
+                <h1>Test</h1>
+            </div>
+            </a>
+          </div>
+        </div>
+      
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <p>Test</p>
+  </div>
+</body>
+<!-- JS sources -->
+<script src="js/global.js"></script>
+<!-- JQuery JS -->
+<script src="lib/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </html>
