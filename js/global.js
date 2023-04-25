@@ -34,10 +34,6 @@ function setCookie(cname, cvalue, exdays) {
 
 function activateDarkMode()
 {
-
-
-
-
     //document.cookie = "theme=dark; expires=Thu, 18 Dec 2013 12:00:00 UTC";
 
     document.getElementById("menuBody").setAttribute("class", "navbar navbar-inverse");
@@ -45,6 +41,8 @@ function activateDarkMode()
     document.getElementById("content").setAttribute("class", "container content-rapid-recipes-dark");
 
     document.getElementById("switchTheme").setAttribute("onClick", "activateLightMode()");
+
+    setCookie("theme", "dark", 7);
 }
 
 function activateLightMode()
@@ -54,4 +52,20 @@ function activateLightMode()
     document.getElementById("content").setAttribute("class", "container content-rapid-recipes");
 
     document.getElementById("switchTheme").setAttribute("onClick", "activateDarkMode()");
+
+    setCookie("theme", "light", 7);
+}
+
+var theme = getCookie("theme");
+
+if(theme != "")
+{
+    if(theme == "dark")
+    {
+        activateDarkMode();
+    }
+    else
+    {
+        activateLightMode();
+    }
 }
