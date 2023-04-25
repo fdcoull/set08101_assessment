@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 
-<!--
-
-Todo:
-* favicon
-* tiles for list page
-* template for recipe page
-
-* carousel - https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
-
-Changes
-* Removed cookware and ingredients pages and combined into essentials page
-
--->
-
 <html lang="en">
+<!-- Head meta settings -->
 <head>
   <meta charset="utf-8">
   <title>Rapid Recipes</title>
@@ -25,7 +12,9 @@ Changes
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
+<!-- Body content -->
 <body id="body" class="body-rapid-recipes">
+  <!-- Navigation bar -->
   <nav id="menuBody" class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -34,10 +23,12 @@ Changes
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <!-- Site logo -->
         <a class="navbar-brand" href='index.html'>
           <img src="images/company/rapid-recipes-logo-full-black.png" alt="Rapid Recipes" id="menuLogo">
         </a>
       </div>
+      <!-- Navigation bar options -->
       <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav">
           <li class="active"><a href='#'>Home</a></li>
@@ -56,13 +47,16 @@ Changes
           <li><a href="health.html">Health</a></li>
           <li><a href="targets.html">Targets</a></li>
         </ul>
+        <!-- Theme switch button -->
         <ul class="nav navbar-nav navbar-right">
           <li><a id="switchTheme" onclick="activateDarkMode()" href="#"><span class="glyphicon glyphicon-adjust"></span></a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- Page content -->
   <div id="content" class="container content-rapid-recipes">
+    <!-- Page title -->
     <h1>Rapid Recipes</h1>
     <hr>
     <p>Test</p>
