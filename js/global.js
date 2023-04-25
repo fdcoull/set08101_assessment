@@ -24,6 +24,7 @@ function activateDarkMode()
 {
     document.getElementById("menuBody").setAttribute("class", "navbar navbar-inverse");
     document.getElementById("body").setAttribute("class", "body-rapid-recipes-dark");
+    document.getElementById("menuLogo").setAttribute("src", "images/company/rapid-recipes-logo-full-white.png");
     document.getElementById("content").setAttribute("class", "container content-rapid-recipes-dark");
 
     document.getElementById("switchTheme").setAttribute("onClick", "activateLightMode()");
@@ -35,6 +36,7 @@ function activateLightMode()
 {
     document.getElementById("menuBody").setAttribute("class", "navbar navbar-default");
     document.getElementById("body").setAttribute("class", "body-rapid-recipes");
+    document.getElementById("menuLogo").setAttribute("src", "images/company/rapid-recipes-logo-full-black.png");
     document.getElementById("content").setAttribute("class", "container content-rapid-recipes");
 
     document.getElementById("switchTheme").setAttribute("onClick", "activateDarkMode()");

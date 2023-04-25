@@ -25,6 +25,15 @@
   font-family: raleway-regular;
 }
 
+.navbar-brand {
+  padding: 5px 5px !important;
+}
+
+.navbar-brand > img {
+  height:100%;
+  width:auto;
+}
+
 
 
 p {
