@@ -1,10 +1,10 @@
 const recipes = `[
-    {"name":"Oatmeal with Berries", "category":"breakfast", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"Poached Egg/Hummus Toast", "category":"breakfast", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"Lentil Soup", "category":"lunch", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"Chicken/Hummus Sandwich", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"Prawn/Chickpea Curry", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"Chicken/Tofu Pasta", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]}
+    {"name":"Oatmeal with Berries", "category":"breakfast", "time":"5 minutes", "health":"kcal: 214", "price":"~£0.50", "meals":"1", "method":"Boil kettle, pour portion of oats into a bowl along with frozen berries and once kettle is boiled, pour in along with ingredients.", "ingredients":[["Portion of Oats","£0.10"],["Portion of Berries","£0.40"],["Water","£0.00"]]},
+    {"name":"Poached Egg/Hummus Toast", "category":"breakfast", "time":"10 minutes", "health":"kcal: 517", "price":"~£0.70", "meals":"1", "method":"Boil pan of water and crack an egg into it, leave for 7 minutes and then use spatula or spoon to take egg out. If using vegan option, skip this step. Put bread in toaster and allow time for cooking. Place egg on toasted bread or spread hummus.", "ingredients":[["Bread","£0.10"],["Hummus/Egg","£0.60"]]},
+    {"name":"Lentil Soup", "category":"lunch", "time":"30 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"Chicken/Hummus Sandwich", "category":"lunch", "time":"5 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"Prawn/Chickpea Curry", "category":"dinner", "time":"40 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"Chicken/Tofu Pasta", "category":"dinner", "time":"40 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]}
 ]`;
 
 let recipesJson = JSON.parse(recipes);
