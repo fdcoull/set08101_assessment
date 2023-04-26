@@ -20,7 +20,7 @@ function getMeal()
     document.getElementById("meals").innerHTML = "<span class=\"glyphicon glyphicon-user\"></span> " + recipesJson[id].meals;
 
     document.getElementById("share-facebook").setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=https://fdcoull.github.io/set08101_assessment.github.io/meal?id=" + id);
-    document.getElementById("share-snapchat").setAttribute("href", "");
+    document.getElementById("share-whatsapp").setAttribute("href", "whatsapp://send?text=ttps://fdcoull.github.io/set08101_assessment.github.io/meal?id=" + id);
     document.getElementById("share-twitter").setAttribute("href", "");
     document.getElementById("share-instagram").setAttribute("href", "");
 
