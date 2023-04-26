@@ -22,7 +22,7 @@ function getMeal()
     document.getElementById("share-facebook").setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
     document.getElementById("share-whatsapp").setAttribute("href", "whatsapp://send?text=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
     document.getElementById("share-twitter").setAttribute("href", "http://twitter.com/share?text=Check out this recipe&url=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
-    document.getElementById("share-email").setAttribute("href", "mailto:?subject=Rapid Recipes&amp;body=Check out this recipe: https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
+    document.getElementById("share-email").setAttribute("href", "mailto:? &subject=Rapid Recipes &body=Check out this recipe: https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
 
     for(var i = 0; i < recipesJson[id].ingredients.length; i++)
     {
