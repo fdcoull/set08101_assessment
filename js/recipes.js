@@ -1,10 +1,10 @@
 const recipes = `[
-    {"name":"curry", "category":"breakfast", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"curry", "category":"lunch", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"curry", "category":"lunch", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"curry", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"curry", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
-    {"name":"curry", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]}
+    {"name":"Oatmeal with Berries", "category":"breakfast", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"Poached Egg/Hummus Toast", "category":"breakfast", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"Lentil Soup", "category":"lunch", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"Chicken/Hummus Sandwich", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"Prawn/Chickpea Curry", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"Chicken/Tofu Pasta", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]}
 ]`;
 
 let recipesJson = JSON.parse(recipes);
