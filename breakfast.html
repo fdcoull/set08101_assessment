@@ -37,7 +37,7 @@
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="recipes.html">All Recipes</a></li>
-              <li><a href="breakfast.html">Breakfast</a></li>
+              <li class="active"><a href="breakfast.html">Breakfast</a></li>
               <li><a href="lunch.html">Lunch</a></li>
               <li><a href="dinner.html">Dinner</a></li>
             </ul>
@@ -56,40 +56,9 @@
   <!-- Page content -->
   <div id="content" class="container content-rapid-recipes">
     <!-- Page title -->
-    <div class="row meal-rapid-recipes">
-        <div class="col-sm-4">
-            <img id="image" alt="Recipe image" width="100%">
-        </div>
-        <div class="col-sm-8">
-            <h1 id="title"></h1>
-            <p id="time"></p>
-            <p id="health"></p>
-            <p id="price"></p>
-            <p id="meals"></p>
-            <a class="btn btn-primary" id="share-facebook" href="#" role="button">Facebook</a>
-            <a class="btn btn-success" id="share-whatsapp" href="#" role="button">WhatsApp</a>
-            <a class="btn btn-info" id="share-twitter" href="#" role="button">Twitter</a>
-            <a class="btn btn-danger" id="share-email" href="#" role="button">Email</a>
-        </div>
-    </div>
+    <h1>Breakfast</h1>
     <hr>
-    <div class="row">
-        <div class="col-sm-6">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Ingredient</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody id="ingredients">
-                </tbody>
-            </table>
-        </div>
-        <div class ="col-sm-6">
-            <h3>Method</h3>
-            <p id="method"></p>
-        </div>
+    <div id="recipeList" class="row">
     </div>
   </div>
 </body>
@@ -101,6 +70,6 @@
 <script src="js/global.js"></script>
 <script src="js/recipes.js"></script>
 <script>
-    getMeal();
+    listMeals("breakfast");
 </script>
 </html>

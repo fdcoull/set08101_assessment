@@ -58,23 +58,7 @@
     <!-- Page title -->
     <h1>All Recipes</h1>
     <hr>
-    <div class="row">
-        <div class="col-sm-3" style="padding: 1em;">
-            <img src="images/recipes/1.jpg" width="100%">
-            <p>Test</p>
-        </div>
-        <div class="col-sm-3" style="padding: 1em;">
-            <img src="images/recipes/1.jpg" width="100%">
-            <p>Test</p>
-        </div>
-        <div class="col-sm-3" style="padding: 1em;">
-            <img src="images/recipes/1.jpg" width="100%">
-            <p>Test</p>
-        </div>
-        <div class="col-sm-3" style="padding: 1em;">
-            <img src="images/recipes/1.jpg" width="100%">
-            <p>Test</p>
-        </div>
+    <div id="recipeList" class="row">
     </div>
   </div>
 </body>
@@ -84,4 +68,8 @@
 <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <!-- JS sources -->
 <script src="js/global.js"></script>
+<script src="js/recipes.js"></script>
+<script>
+    listMeals("all");
+</script>
 </html>

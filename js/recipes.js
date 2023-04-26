@@ -1,16 +1,18 @@
 const recipes = `[
+    {"name":"curry", "category":"breakfast", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"curry", "category":"lunch", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"curry", "category":"lunch", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
+    {"name":"curry", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
     {"name":"curry", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]},
     {"name":"curry", "category":"dinner", "time":"10 minutes", "health":"10g salt", "price":"10.00", "meals":"3", "method":"Description", "ingredients":[["1","2"],["3","4"]]}
 ]`;
 
-var recipesJson = JSON.parse(recipes);
+let recipesJson = JSON.parse(recipes);
 
 function getMeal()
 {
     let params = new URLSearchParams(document.location.search);
     let id = params.get("id");
-
-    let recipesJson = JSON.parse(recipes);
 
     document.getElementById("title").innerHTML = recipesJson[id].name;
     document.getElementById("image").setAttribute("src", "images/recipes/" + id + ".jpg");
@@ -30,4 +32,15 @@ function getMeal()
     }
 
     document.getElementById("method").innerHTML = recipesJson[id].method;
+}
+
+function listMeals(category)
+{
+    for(var i = 0; i < recipesJson.length; i++)
+    {
+        if(category == recipesJson[i].category || category == "all")
+        {
+            document.getElementById("recipeList").innerHTML += "<a href=\"meal.html?id=" + i + "\"><div class=\"col-sm-3\" style=\"padding: 1em;\">" + "<img src=\"images/recipes/" + i + ".jpg\" width=\"100%\"><p>" + recipesJson[i].name + "</p></div>";
+        }
+    }
 }
