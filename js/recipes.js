@@ -21,10 +21,16 @@ function getMeal()
     document.getElementById("price").innerHTML = "<span class=\"glyphicon glyphicon-tag\"></span> " + recipesJson[id].price;
     document.getElementById("meals").innerHTML = "<span class=\"glyphicon glyphicon-user\"></span> " + recipesJson[id].meals;
 
-    document.getElementById("share-facebook").setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
-    document.getElementById("share-whatsapp").setAttribute("href", "whatsapp://send?text=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
-    document.getElementById("share-twitter").setAttribute("href", "http://twitter.com/share?text=Check out this recipe&url=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
-    document.getElementById("share-email").setAttribute("href", "mailto:? &subject=Rapid Recipes &body=Check out this recipe: https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
+    //Check if share button IDs exist, display if so, omit if not (print-friendly page)
+    if(document.getElementById("print") && document.getElementById("share-facebook") && document.getElementById("share-whatsapp") && document.getElementById("share-twitter") && document.getElementById("share-email"))
+    {
+        document.getElementById("print").setAttribute("href", "meal-print.html?id=" + id);
+        document.getElementById("share-facebook").setAttribute("href", "https://www.facebook.com/sharer/sharer.php?u=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
+        document.getElementById("share-whatsapp").setAttribute("href", "whatsapp://send?text=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
+        document.getElementById("share-twitter").setAttribute("href", "http://twitter.com/share?text=Check out this recipe&url=https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
+        document.getElementById("share-email").setAttribute("href", "mailto:? &subject=Rapid Recipes &body=Check out this recipe: https://fdcoull.github.io/set08101_assessment/meal.html?id=" + id);
+    
+    }
 
     for(var i = 0; i < recipesJson[id].ingredients.length; i++)
     {

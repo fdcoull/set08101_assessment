@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Head meta settings -->
+<head>
+  <meta charset="utf-8">
+  <title>Rapid Recipes</title>
+  <link rel="icon" type="image/x-icon" href="images/company/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- CSS sources -->
+  <link rel="stylesheet" href="style/global.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<!-- Body content -->
+<body id="body" class="body-rapid-recipes">
+  <!-- Navigation bar -->
+  <nav id="menuBody" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Site logo -->
+        <a class="navbar-brand" href='index.html'>
+          <img src="images/company/rapid-recipes-logo-full-black.png" alt="Rapid Recipes" id="menuLogo">
+        </a>
+      </div>
+      <!-- Navigation bar options -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href='index.html'>Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="recipes.html">All Recipes</a></li>
+              <li><a href="breakfast.html">Breakfast</a></li>
+              <li><a href="lunch.html">Lunch</a></li>
+              <li><a href="dinner.html">Dinner</a></li>
+            </ul>
+          </li>
+          <li><a href="essentials.html">Essentials</a></li>
+          <li><a href="health.html">Health</a></li>
+          <li><a href="targets.html">Targets</a></li>
+        </ul>
+        <!-- Theme switch button -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a id="switchTheme" onclick="activateDarkMode()" href="#"><span class="glyphicon glyphicon-adjust"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page content -->
+  <div id="content" class="container content-rapid-recipes">
+    <!-- Page title -->
+    <h1>Targets</h1>
+    <hr>
+    <p>Test</p>
+    <h3>Single Meal</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nutrient</th>
+                <th>Quantity</th>
+                <th>Target</th>
+                <th>Percent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Protein</td>
+                <td><input type="text" class="form-control" id="proteinQuantitySingle"></td>
+                <td><input type="text" class="form-control" id="proteinTargetSingle"></td>
+                <td><input type="text" class="form-control" id="proteinOutputSingle" disabled></td>
+            </tr>
+            <tr>
+                <td>Calories</td>
+                <td><input type="text" class="form-control" id="caloriesQuantitySingle"></td>
+                <td><input type="text" class="form-control" id="caloriesTargetSingle"></td>
+                <td><input type="text" class="form-control" id="caloriesOutputSingle" disabled></td>
+            </tr>
+            <tr>
+                <td>Carbohydrates</td>
+                <td><input type="text" class="form-control" id="carbohydratesQuantitySingle"></td>
+                <td><input type="text" class="form-control" id="carbohydratesTargetSingle"></td>
+                <td><input type="text" class="form-control" id="carbohydratesOutputSingle" disabled></td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td><input type="text" class="form-control" id="fatQuantitySingle"></td>
+                <td><input type="text" class="form-control" id="fatTargetSingle"></td>
+                <td><input type="text" class="form-control" id="fatOutputSingle" disabled></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a class="btn btn-default" id="print" href="#" onClick="calculateSingleMeal()" role="button">Calculate</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Three Meals</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nutrient</th>
+                <th>Breakfast Quantity</th>
+                <th>Lunch Quantity</th>
+                <th>Dinner Quantity</th>
+                <th>Target</th>
+                <th>Percent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Protein</td>
+                <td><input type="text" class="form-control" id="proteinQuantityBreakfastDaily"></td>
+                <td><input type="text" class="form-control" id="proteinQuantityLunchDaily"></td>
+                <td><input type="text" class="form-control" id="proteinQuantityDinnerDaily"></td>
+                <td><input type="text" class="form-control" id="proteinTargetDaily"></td>
+                <td><input type="text" class="form-control" id="proteinOutputDaily" disabled></td>
+            </tr>
+            <tr>
+                <td>Calories</td>
+                <td><input type="text" class="form-control" id="caloriesQuantityBreakfastDaily"></td>
+                <td><input type="text" class="form-control" id="caloriesQuantityLunchDaily"></td>
+                <td><input type="text" class="form-control" id="caloriesQuantityDinnerDaily"></td>
+                <td><input type="text" class="form-control" id="caloriesTargetDaily"></td>
+                <td><input type="text" class="form-control" id="caloriesOutputDaily" disabled></td>
+            </tr>
+            <tr>
+                <td>Carbohydrates</td>
+                <td><input type="text" class="form-control" id="carbohydratesQuantityBreakfastDaily"></td>
+                <td><input type="text" class="form-control" id="carbohydratesQuantityLunchDaily"></td>
+                <td><input type="text" class="form-control" id="carbohydratesQuantityDinnerDaily"></td>
+                <td><input type="text" class="form-control" id="carbohydratesTargetDaily"></td>
+                <td><input type="text" class="form-control" id="carbohydratesOutputDaily" disabled></td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td><input type="text" class="form-control" id="fatQuantityBreakfastDaily"></td>
+                <td><input type="text" class="form-control" id="fatQuantityLunchDaily"></td>
+                <td><input type="text" class="form-control" id="fatQuantityDinnerDaily"></td>
+                <td><input type="text" class="form-control" id="fatTargetDaily"></td>
+                <td><input type="text" class="form-control" id="fatOutputDaily" disabled></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a class="btn btn-default" id="print" href="#" onClick="calculateDailyMeals()" role="button">Calculate</a></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</body>
+<!-- JQuery JS -->
+<script src="lib/jquery-3.6.4/jquery-3.6.4.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!-- JS sources -->
+<script src="js/global.js"></script>
+<script src="js/targets.js"></script>
+</html>
