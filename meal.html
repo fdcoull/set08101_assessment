@@ -31,8 +31,8 @@
       <!-- Navigation bar options -->
       <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav">
-          <li class="active"><a href='index.html'>Home</a></li>
-          <li class="dropdown">
+          <li><a href='index.html'>Home</a></li>
+          <li class="dropdown active">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -56,9 +56,40 @@
   <!-- Page content -->
   <div id="content" class="container content-rapid-recipes">
     <!-- Page title -->
-    <h1>Rapid Recipes</h1>
+    <div class="row meal-rapid-recipes">
+        <div class="col-sm-4">
+            <img id="image" alt="Recipe image" width="100%">
+        </div>
+        <div class="col-sm-8">
+            <h1 id="title"></h1>
+            <p id="time"></p>
+            <p id="health"></p>
+            <p id="price"></p>
+            <p id="meals"></p>
+            <a class="btn btn-primary" id="share-facebook" href="#" role="button">Facebook</a>
+            <a class="btn btn-warning" id="share-snapchat" href="#" role="button">Snapchat</a>
+            <a class="btn btn-info" id="share-twitter" href="#" role="button">Twitter</a>
+            <a class="btn btn-danger" id="share-instagram" href="#" role="button">Instagram</a>
+        </div>
+    </div>
     <hr>
-    <p>Test</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="ingredients">
+                </tbody>
+            </table>
+        </div>
+        <div class ="col-sm-6">
+            <p id="method"></p>
+        </div>
+    </div>
   </div>
 </body>
 <!-- JQuery JS -->
@@ -67,4 +98,8 @@
 <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <!-- JS sources -->
 <script src="js/global.js"></script>
+<script src="js/recipes.js"></script>
+<script>
+    getMeal();
+</script>
 </html>
