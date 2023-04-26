@@ -1,7 +1,0 @@
-{
-    "breakfast":[
-        {"name":"curry", "src":"curry.jpg", "description":"A description"},
-        {"name":"pasta", "src":"pasta.jpg", "description":"A description"},
-        {"name":"spaghetti", "src":"spaghetti.jpg", "description":"A description"}
-    ]
-}
